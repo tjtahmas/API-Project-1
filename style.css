@@ -7,7 +7,20 @@
  bottom: 200px;
 }
 
-.col{
-
+.allRows {
+    position: relative;
+    left: 150px;
 }
-
+.hour {
+    position:relative;
+    left:180px;
+}
+.card {
+position:relative;
+bottom:455px;
+left:30px;
+}
+#top {
+    position: relative;
+    left:90px;
+}
