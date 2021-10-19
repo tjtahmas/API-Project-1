@@ -1,4 +1,4 @@
-var city = 'Columbus'
+var city = 'New York City'
 var WeatherAPIkey = 'ebea214579512211db301dcf4d7f10c9';
 
 fetch('https://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=' + WeatherAPIkey, {
