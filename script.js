@@ -54,5 +54,30 @@ fetch('https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=
     })
     .then(function (data) {
         console.log(data);
+
+        var weatherPlaylist = data;
+
+        playlist = weatherPlaylist.items[0].id.playlistId;
+        console.log(playlist)
+
+
+        var player;
+
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player('player', {
+    height: '390',
+    width: '640',
+    videoId: playlist,
+    playerVars: {
+      'playsinline': 1
+    },
+    events: {
+      'onReady': onPlayerReady,
+      'onStateChange': onPlayerStateChange
+    }
+  });
+}
+
+onYouTubeIframeAPIReady;
     });
 
