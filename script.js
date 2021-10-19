@@ -1,6 +1,13 @@
 var city = 'New York City'
 var WeatherAPIkey = 'ebea214579512211db301dcf4d7f10c9';
 
+function getCity(){
+    city = document.querySelector('.getCity').value;
+    updateCity(city);
+ }
+
+
+ function updateCity(city){
 fetch('https://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=' + WeatherAPIkey, {
     // The browser fetches the resource from the remote server without first looking in the cache.
     // The browser will then update the cache with the downloaded resource.
@@ -35,15 +42,10 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=' + 
             console.log('Play PANIC!! Playlist') //Could include Fog, Mist, Smoke, Ash, Squall, Sand, Tornado, etc.
         }
 
-        
-
         //CONDITIONS: Clear Sky, Few Clouds, Scattered Clouds, Broken Clouds, Shower Rain, Rain, Thunderstorm, Snow, Mist
 
-        //CONDITIONS: Thundestorm, Drizzle, Rain, Snow, Clear, Clouds, lots of Atmosphere events
-
-
-
 });
+ }
 
 var YouTubeAPIkey = 'AIzaSyAmz5aARCdvb9Ri8Lw1Bc0yv-XI0JnyH8I';
 var searchCritera = 'Rainy%20Day%20Music';
