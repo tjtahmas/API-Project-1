@@ -1,4 +1,4 @@
-var city = 'St. Louis'
+var city = 'Columbus'
 var WeatherAPIkey = 'ebea214579512211db301dcf4d7f10c9';
 
 fetch('https://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=' + WeatherAPIkey, {
@@ -15,6 +15,7 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=' + 
         if (status == 'Clouds'){
             console.log('Play Clouds Playlist');
         } else if (status == 'Clear'){
+            document.body.style.backgroundColor;
             console.log('Play Clear Playlist');
         } else if (status == 'Thunderstorm'){
             console.log('Play Thunderstorm Playlist')
