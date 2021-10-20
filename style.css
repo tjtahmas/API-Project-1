@@ -1,12 +1,7 @@
-.body {
-
-}
-
 .nav-item {
  position: relative;
  bottom: 200px;
 }
-
 .allRows {
     position: relative;
     left: 150px;
@@ -17,10 +12,15 @@
 }
 .card {
 position:relative;
-bottom:60px;
 left:30px;
 }
 #top {
     position: relative;
     left:90px;
+}
+
+#iframe {
+    position:relative;
+    left:450px;
+    bottom: 350px;
 }
