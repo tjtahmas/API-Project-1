@@ -62,6 +62,9 @@ fetch('https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=
         //make embeded YouTube link from videoID
         embedID = 'https://www.youtube.com/embed/' + videoID;
         console.log(embedID);
+        document.getElementById("iframe").src = embedID;
     });
 });
 }
+
+
