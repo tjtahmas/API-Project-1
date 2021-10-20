@@ -49,9 +49,9 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=' + 
 
 var YouTubeAPIkey = 'AIzaSyAmz5aARCdvb9Ri8Lw1Bc0yv-XI0JnyH8I';
 searchCriteria = searchCriteria.concat('copyright%20free%20music');
-console.log(searchCriteria)
-var searchType = 'playlist'
-var maxResults = 15
+console.log(searchCriteria);
+var searchType = 'video';
+var maxResults = 15;
 fetch('https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=' + maxResults + '&q=' + searchCriteria + '&type=' + searchType + '&key=' + YouTubeAPIkey, {
     // The browser fetches the resource from the remote server without first looking in the cache.
     // The browser will then update the cache with the downloaded resource.
@@ -61,12 +61,17 @@ fetch('https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=
         return response.json();
     })
     .then(function (data) {
-        console.log(data);
+        //console.log(data);
 
-        var weatherPlaylist = data;
+        videoID = data.items[0].id.videoId;
+        console.log(videoID);
 
-        playlist = weatherPlaylist.items[0].id.playlistId;
-        console.log(playlist)
+        //make embeded YouTube link from videoID
+
+        embedID = 'https://www.youtube.com/embed/' + videoID;
+        console.log(embedID);
+
+
 
     });
 });
