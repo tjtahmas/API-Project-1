@@ -1,156 +1,39 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="./style.css" />
-    <title>Weather & Music</title>
-  </head>
-  <header><div class="jumbotron">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+  <title>Weather & Music</title>
+</head>
+<header>
+  <div class="jumbotron">
     <h1 class="display-4">Welcome to Spotiweather!</h1>
-    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+<<<<<<< HEAD
+    <p class="lead">The purpose of the project is to create an engaging and entertaining alternative to traditional weather channels and websites. Our website provides music and playlists that suit the mood of the day. For example, imagine being on vacation at a beach. You may want to find new music that goes well with the mood of being at the beach. Instead of having to dig through playlists and internet searches you can simply load our website and have instant access to music that matches the mood of the day.
+    </p>
+=======
+    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
+      featured content or information.</p>
+>>>>>>> 61d0c2f2b824f41237bb20de9c2e07d7ee4b08c7
     <hr class="my-4">
-    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+    <p>Below you will find that you can search any city in the world. You will find weather for the city, and music that matches.</p>
+    <p>We use a weather API to collect data about the weather from the user’s location, and use the Youtube API to connect music.
+    </p>
     <p class="lead">
       <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
     </p>
+<<<<<<< HEAD
   </div></header>
   
   <body class = "body">
-    <h1 id ="top">Weather</h1>
-         
-          <div class="allRows">
-          <div class="row" id="9">
-            <div class='col-2 hour'> Song <img src="https://giphy.com/stories/gifs-from-the-nba-preseason-71b2bbce-200c" alt = "GIF">
-            </div>
-          
-            <div class="col-8 description backgroundTool border-bottom scheduler">
-              <span for="event" class="textData" id="9amSpan">text here </span>
-              <input id="9amInput " class="d-none border-0 form-control textarea bg-transparent am9Input" type="text" placeholder="Default input"></input>
-            </div>
-            <div class="col-2 saveBtn">
-              <button type="button" class="btn btn-primary">Play</button>
-           </div>
-          </div>
-        
-    
-        <div class="row" id="10">
-          <div class='col-2 hour'> Song
-          </div>
-        
-          <div class="col-8 description backgroundTool border-bottom scheduler">
-            <span for="event" class="textData" id= "10amInput">text here </span>
-            <input id="10amInput" class="d-none border-0 form-control textarea bg-transparent am10Input" type="text" placeholder="Default input">
-          </div>
-          <div class="col-2 saveBtn">
-            <button type="button" class="btn btn-primary">Play</button>
-         </div>
-        </div>
-    
-    
-    
-        <div class="row"id="11">
-          <div class='col-2 hour'> Song
-          </div>
-        
-          <div class="col-8 description backgroundTool border-bottom scheduler">
-            <span class="textData" id="11amSpan">text here </span>
-            <input id="11amInput" class="d-none border-0 form-control textarea bg-transparent am11Input" type="text" placeholder="Default input">
-          </div>
-          <div class="col-2 saveBtn">
-            <button type="button" class="btn btn-primary">Play</button>
-         </div>
-        </div>
-    
-    
-    
-    
-    
-        <div class="row"id="12">
-          <div class='col-2 hour'> Song
-          </div>
-        
-          <div class="col-8 description backgroundTool border-bottom scheduler">
-            <span class="textData" id="12pmSpan">text here </span>
-            <input id="12pmInput" class="d-none border-0 form-control textarea bg-transparent pm12Input" type="text" placeholder="Default input">
-          </div>
-          <div class="col-2 saveBtn">
-            <button type="button" class="btn btn-primary">Play</button>
-         </div>
-        </div>
-    
-    
-        <div class="row"id="13">
-          <div class='col-2 hour'> Song
-          </div>
-        
-          <div class="col-8 description backgroundTool border-bottom scheduler">
-            <span class="textData" id="1pmSpan">text here </span>
-            <input id="1pmInput" class="d-none border-0 form-control textarea bg-transparent pm1Input" type="text" placeholder="Default input">
-          </div>
-          <div class="col-2 saveBtn">
-            <button type="button" class="btn btn-primary">Play</button>
-         </div>
-        </div>
-    
-        <div class="row"id="14">
-            <div class='col-2 hour'> Song
-            </div>
-          
-            <div class="col-8 description backgroundTool border-bottom scheduler">
-              <span class="textData" id="2pmSpan">text here </span>
-              <input id="2pmInput" class="d-none border-0 form-control textarea bg-transparent pm2Input" type="text" placeholder="Default input">
-            </div>
-            <div class="col-2 saveBtn">
-              <button type="button" class="btn btn-primary">Play</button>
-           </div>
-          </div>
-    
-          <div class="row" id="15">
-            <div class='col-2 hour'> Song
-            </div>
-          
-            <div class="col-8 description backgroundTool border-bottom scheduler">
-              <span class="textData" id="3pmSpan">text here </span>
-              <input id="3pmInput" class="d-none border-0 form-control textarea bg-transparent pm3Input" type="text" placeholder="Default input">
-            </div>
-            <div class="col-2 saveBtn">
-              <button type="button" class="btn btn-primary">Play</button>
-           </div>
-          </div>
-    
-          <div class="row" id="16">
-            <div class='col-2 hour'> Song
-            </div>
-          
-            <div class="col-8 description backgroundTool border-bottom scheduler">
-              <span class="textData" id="4pmSpan">text here </span>
-              <input id="4pmInput" class="d-none border-0 form-control textarea bg-transparent pm1Input" type="text" placeholder="Default input">
-            </div>
-            <div class="col-2 saveBtn">
-              <button type="button" class="btn btn-primary">Play</button>
-           </div>
-          </div>
-    
-          <div class="row" id="17">
-           
-            <div class='col-2 hour'> Song
-            </div>
-          
-            <div class="col-8 description backgroundTool border-bottom scheduler">
-              <span class="textData" id="5pmSpan">text here </span>
-              <input id="5pmInput" class="d-none border-0 form-control textarea bg-transparent pm5Input" type="text" placeholder="Default input">
-            </div>
-            <div class="col-2 saveBtn">
-              <!-- <button type="submit" class="Button" class="btn btn-primary mb-2 5pmButton">Play</button> -->
-              <button type="button" class="btn btn-primary">Play</button>
-           </div>
-          </div>
-        </div>
+    <h1 id ="top">Weather</h1>   
      
    <div class="card" style="width: 18rem;">
     <img class="card-img-top" src="data:image/png;base64,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" alt="Card image cap">
@@ -162,25 +45,198 @@
         <div class = 'intput-group md-2 searchBar'>
           <input type='text' class='getCity' placeholder='Select A City' aria-label='City' value=''>
           <button type='button' onclick='getCity()' class='btn btn-secondary searchButton'>Search</button>
-      </div>
-
+      </div></div></div>
+      
       <div>
-        <iframe width='560' height='315' src="https://www.youtube.com/embed/videoseries?list=PL9hCxE_ypj2yx2VXUHitZVdaqP447LT0z" frameborder='0' allow='accelerometer; autoplay; encrypted-media; gryoscope; picture-in-picture' allowfullscreen></iframe>
+        <iframe id ="iframe" width='560' height='315' src="https://www.youtube.com/embed/videoseries?list=PL9hCxE_ypj2yx2VXUHitZVdaqP447LT0z" frameborder='0' allow='accelerometer; autoplay; encrypted-media; gryoscope; picture-in-picture' allowfullscreen></iframe>
+=======
+  </div>
+</header>
+
+<body class="body">
+  <h1 id="top">Weather</h1>
+
+  <div class="allRows">
+    <div class="row" id="9">
+      <div class='col-2 hour'> Song <img src="https://giphy.com/stories/gifs-from-the-nba-preseason-71b2bbce-200c"
+          alt="GIF">
       </div>
-       
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="./script.js"></script>  
-  </body>
+
+      <div class="col-8 description backgroundTool border-bottom scheduler">
+        <span for="event" class="textData" id="9amSpan">text here </span>
+        <input id="9amInput " class="d-none border-0 form-control textarea bg-transparent am9Input" type="text"
+          placeholder="Default input"></input>
+      </div>
+      <div class="col-2 saveBtn">
+        <button type="button" class="btn btn-primary">Play</button>
+      </div>
+    </div>
+
+
+    <div class="row" id="10">
+      <div class='col-2 hour'> Song
+      </div>
+
+      <div class="col-8 description backgroundTool border-bottom scheduler">
+        <span for="event" class="textData" id="10amInput">text here </span>
+        <input id="10amInput" class="d-none border-0 form-control textarea bg-transparent am10Input" type="text"
+          placeholder="Default input">
+      </div>
+      <div class="col-2 saveBtn">
+        <button type="button" class="btn btn-primary">Play</button>
+      </div>
+    </div>
+
+
+
+    <div class="row" id="11">
+      <div class='col-2 hour'> Song
+      </div>
+
+      <div class="col-8 description backgroundTool border-bottom scheduler">
+        <span class="textData" id="11amSpan">text here </span>
+        <input id="11amInput" class="d-none border-0 form-control textarea bg-transparent am11Input" type="text"
+          placeholder="Default input">
+      </div>
+      <div class="col-2 saveBtn">
+        <button type="button" class="btn btn-primary">Play</button>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="row" id="12">
+      <div class='col-2 hour'> Song
+      </div>
+
+      <div class="col-8 description backgroundTool border-bottom scheduler">
+        <span class="textData" id="12pmSpan">text here </span>
+        <input id="12pmInput" class="d-none border-0 form-control textarea bg-transparent pm12Input" type="text"
+          placeholder="Default input">
+      </div>
+      <div class="col-2 saveBtn">
+        <button type="button" class="btn btn-primary">Play</button>
+      </div>
+    </div>
+
+
+    <div class="row" id="13">
+      <div class='col-2 hour'> Song
+      </div>
+
+      <div class="col-8 description backgroundTool border-bottom scheduler">
+        <span class="textData" id="1pmSpan">text here </span>
+        <input id="1pmInput" class="d-none border-0 form-control textarea bg-transparent pm1Input" type="text"
+          placeholder="Default input">
+      </div>
+      <div class="col-2 saveBtn">
+        <button type="button" class="btn btn-primary">Play</button>
+      </div>
+    </div>
+
+    <div class="row" id="14">
+      <div class='col-2 hour'> Song
+      </div>
+
+      <div class="col-8 description backgroundTool border-bottom scheduler">
+        <span class="textData" id="2pmSpan">text here </span>
+        <input id="2pmInput" class="d-none border-0 form-control textarea bg-transparent pm2Input" type="text"
+          placeholder="Default input">
+      </div>
+      <div class="col-2 saveBtn">
+        <button type="button" class="btn btn-primary">Play</button>
+      </div>
+    </div>
+
+    <div class="row" id="15">
+      <div class='col-2 hour'> Song
+      </div>
+
+      <div class="col-8 description backgroundTool border-bottom scheduler">
+        <span class="textData" id="3pmSpan">text here </span>
+        <input id="3pmInput" class="d-none border-0 form-control textarea bg-transparent pm3Input" type="text"
+          placeholder="Default input">
+      </div>
+      <div class="col-2 saveBtn">
+        <button type="button" class="btn btn-primary">Play</button>
+      </div>
+    </div>
+
+    <div class="row" id="16">
+      <div class='col-2 hour'> Song
+>>>>>>> 61d0c2f2b824f41237bb20de9c2e07d7ee4b08c7
+      </div>
+
+      <div class="col-8 description backgroundTool border-bottom scheduler">
+        <span class="textData" id="4pmSpan">text here </span>
+        <input id="4pmInput" class="d-none border-0 form-control textarea bg-transparent pm1Input" type="text"
+          placeholder="Default input">
+      </div>
+      <div class="col-2 saveBtn">
+        <button type="button" class="btn btn-primary">Play</button>
+      </div>
+    </div>
+
+    <div class="row" id="17">
+
+<<<<<<< HEAD
+=======
+      <div class='col-2 hour'> Song
+      </div>
+
+      <div class="col-8 description backgroundTool border-bottom scheduler">
+        <span class="textData" id="5pmSpan">text here </span>
+        <input id="5pmInput" class="d-none border-0 form-control textarea bg-transparent pm5Input" type="text"
+          placeholder="Default input">
+      </div>
+      <div class="col-2 saveBtn">
+        <!-- <button type="submit" class="Button" class="btn btn-primary mb-2 5pmButton">Play</button> -->
+        <button type="button" class="btn btn-primary">Play</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" style="width: 18rem;">
+    <img class="card-img-top"
+      src="data:image/png;base64,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"
+      alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Weather</h5>
+      <p class="card-text">Find the Weather in your Region</p>
+      <div class="input-group">
+        <div class="form-outline">
+          <div class='intput-group md-2 searchBar'>
+            <input type='text' class='getCity' placeholder='Select A City' aria-label='City' value=''>
+            <button type='button' onclick='getCity()' class='btn btn-secondary searchButton'>Search</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-12 videoPlayer">
+    <iframe width="560" height="315" src=embedID title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="./script.js"></script>
+</body>
+
 </html>
-
-
-
-
-
-
-
-
+>>>>>>> 61d0c2f2b824f41237bb20de9c2e07d7ee4b08c7
