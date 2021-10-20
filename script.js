@@ -53,6 +53,10 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=' + 
             console.log('Play PANIC!! Playlist') //Could include Fog, Mist, Smoke, Ash, Squall, Sand, Tornado, etc.
             searchCriteria = 'sandstorm%20';
         }
+        var weatherIcon = document.querySelector('.card-img-top');
+        var icon = weather.weather[0].icon;
+        weatherIcon.src = 'https://openweathermap.org/img/w/' + icon + '.png';
+
         //CONDITIONS: Clear Sky, Few Clouds, Scattered Clouds, Broken Clouds, Shower Rain, Rain, Thunderstorm, Snow, Mist
 var YouTubeAPIkey = 'AIzaSyAmz5aARCdvb9Ri8Lw1Bc0yv-XI0JnyH8I';
 searchCriteria = searchCriteria.concat('copyright%20free%20music');
