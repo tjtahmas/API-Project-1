@@ -24,3 +24,20 @@
         top: 56px;
         left: 300px;
    }
+
+.topnav {
+    background-color: rgb(160, 7, 7);
+    overflow: hidden;
+  }
+
+.topnav a {
+    float: right;
+    color: #dab5b5;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+
+  
