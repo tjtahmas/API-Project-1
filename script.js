@@ -3,6 +3,9 @@ var WeatherAPIkey = 'ebea214579512211db301dcf4d7f10c9';
 
 function getCity(){ //Retrieves city name from input text box
     city = document.querySelector('.getCity').value;
+    //Set City Name
+    var name = document.getElementById('cityName');
+    name.innerHTML = city;
     updateCity(city);
  }
 
@@ -19,6 +22,21 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=' + 
         var searchCriteria = '';
         var weather = data;
         var status = weather.weather[0].main;
+
+        //Add Weather Icon
+        var container = document.getElementById('main-card');
+        console.log(container.children[1].outerHTML)
+        var checkIMG = container.children[1].outerHTML;
+        checkIMG = checkIMG.slice(0,4);
+        if (checkIMG == '<img'){
+            container.children[1].remove();
+        } else {
+            var iconIMG = document.createElement('img');
+            var icon = weather.weather[0].icon;
+            iconIMG.src = 'https://openweathermap.org/img/w/' + icon + '.png';
+            container.appendChild(iconIMG);
+            container.insertBefore(iconIMG, container.childNodes[2]);
+        }
         
         // document.getElementById("weather").innerHTML = data.name + " " + dateConverter + " " + "<img src = " + url + " >"
         // document.getElementById("temperature").innerHTML = "Temp: " + data.main.temp + "°F"
@@ -54,9 +72,9 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=' + 
         }
 
         //Changes weather icon to match current weather
-        var weatherIcon = document.querySelector('.card-img-top');
-        var icon = weather.weather[0].icon;
-        weatherIcon.src = 'https://openweathermap.org/img/w/' + icon + '.png';
+        // var weatherIcon = document.querySelector('.card-img-top');
+        // var icon = weather.weather[0].icon;
+        // weatherIcon.src = 'https://openweathermap.org/img/w/' + icon + '.png';
 
 //Initialize YouTube API search queries
 var YouTubeAPIkey = 'AIzaSyDVwLTLM1W7oiT-8atVv7XdbGCq0xbnzaM';
