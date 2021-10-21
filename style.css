@@ -1,26 +1,26 @@
 .nav-item {
- position: relative;
- bottom: 200px;
-}
-.allRows {
     position: relative;
-    left: 150px;
-}
-.hour {
-    position:relative;
-    left:180px;
-}
-.card {
-position:relative;
-left:30px;
-}
-#top {
-    position: relative;
-    left:90px;
-}
-
-#iframe {
-    position:relative;
-    left:450px;
-    bottom: 350px;
-}
+    bottom: 200px;
+   }
+   .allRows {
+       position: relative;
+       left: 150px;
+   }
+   .hour {
+       position:relative;
+       left:180px;
+   }
+   .card {
+   position:relative;
+   left:30px;
+   }
+   #top {
+       position: relative;
+       left:90px;
+   }
+   
+   #iframe {
+        position: relative;
+        top: 56px;
+        left: 300px;
+   }
