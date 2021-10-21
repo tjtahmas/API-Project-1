@@ -82,16 +82,3 @@ fetch('https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=
     });
 });
 }
-
-
-$.getJSON('events.json', function (data) {
-    var $menu = $('#navbarNav ul.navbar-nav');
-    $.each(data, function () {
-        var url = this.url || '#';
-        $menu.append(
-            '<li class="nav-item">' +
-            '<a class="nav-link" href="' + url + '">' + (this.name || this.id) + '</a>' +
-            '</li>'
-        );
-    });
-});
