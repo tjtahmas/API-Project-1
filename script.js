@@ -25,31 +25,31 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=' + 
         // document.getElementById("humidity").innerHTML = "Humidity: " + data.main.humidity + "%"
         
         if (status == 'Clouds'){
-            document.body.style.backgroundColor = "orange";
+            document.body.style.backgroundImage = "url(./images/clouds.png.png)";
             console.log('Play Clouds Playlist');
             searchCriteria = 'cloudy%20day%20';
         } else if (status == 'Clear'){
             console.log('Play Clear Playlist');
             searchCriteria = 'clear%20day%20';
-            document.body.style.backgroundColor = "green"
+            document.body.style.backgroundImage = "url(./images/clear_skys.png)";
         } else if (status == 'Thunderstorm'){
             document.body.style.backgroundColor = "purple"
             console.log('Play Thunderstorm Playlist')
             searchCriteria = 'thunderstorm%20';
         } else if (status == 'Drizzle'){
-            document.body.style.backgroundColor = "red"
+            document.body.style.backgroundImage = "url(./images/rain-background.gif)";
             console.log('Play Drizzle Playlist')
             searchCriteria = 'drizzly%20day%20';
         } else if (status == 'Rain'){
-            document.body.style.backgroundColor = "brown"
+            document.body.style.backgroundImage = "url(./images/rain-background.gif)";
             console.log('Play Rain Playlist')
             searchCriteria = 'rainy%20day%20';
         } else if (status == 'Snow'){
-            document.body.style.backgroundColor = "blue"
+            document.body.style.backgroundImage = "url(./images/snow-background.gif)";
             console.log('Play Snow Playlist')
             searchCriteria = 'snow%20day%20';
         } else {
-            document.body.style.backgroundColor = "purple"
+            document.body.style.backgroundImage = "url(./images/alert.png)";
             console.log('Play PANIC!! Playlist') //Could include Fog, Mist, Smoke, Ash, Squall, Sand, Tornado, etc.
             searchCriteria = 'sandstorm%20';
         }

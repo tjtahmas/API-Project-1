@@ -12,28 +12,8 @@
     <link rel="stylesheet" type="text/css" href="./style.css" />
     <title>Weather & Music</title>
 </head>
-<!-- <header>
-  <div class="jumbotron">
-    <h1 class="display-4">Welcome to Spotiweather!</h1>
-    <p class="lead">The purpose of the project is to create an engaging and entertaining alternative to traditional
-      weather channels and websites. Our website provides music and playlists that suit the mood of the day. For
-      example, imagine being on vacation at a beach. You may want to find new music that goes well with the mood of
-      being at the beach. Instead of having to dig through playlists and internet searches you can simply load our
-      website and have instant access to music that matches the mood of the day.
-    </p>
-    <hr class="my-4">
-    <p>Below you will find that you can search any city in the world. You will find weather for the city, and music that
-      matches.</p>
-    <p>We use a weather API to collect data about the weather from the user’s location, and use the Youtube API to
-      connect music.
-    </p>
-    <p class="lead">
-      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-    </p>
-  </div>
-</header> -->
 
-<body class="body">
+<body class="body" img="">
     <div class="topnav">
         <a class="active" href="#home">Home</a>
         <a href="#about">About</a>
@@ -49,7 +29,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Weather</h5>
                         <p class="card-text">Find the weather in your region</p>
-                        <input type='text' class='getCity' placeholder='Select A City' aria-label='City' value=' '>
+                        <input type='text' class='getCity' placeholder='Select A City' aria-label='City' value=''>
                         <button type='button' onclick='getCity()' class='btn btn-secondary searchButton'>Search</button>
                     </div>
                 </div>
@@ -58,6 +38,7 @@
                 <div class='row'>
                     <div class='col'>
                         <div>
+                            <!--I Frame for music to play in-->
                             <iframe id="iframe" width='1000' height='600'
                                 src="https://www.youtube.com/embed/videoseries?list=PLRBp0Fe2GpgnIh0AiYKh7o7HnYAej-5ph"
                                 frameborder='0'
