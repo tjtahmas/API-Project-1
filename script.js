@@ -58,7 +58,7 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=' + 
         weatherIcon.src = 'https://openweathermap.org/img/w/' + icon + '.png';
 
         //CONDITIONS: Clear Sky, Few Clouds, Scattered Clouds, Broken Clouds, Shower Rain, Rain, Thunderstorm, Snow, Mist
-var YouTubeAPIkey = 'AIzaSyAmz5aARCdvb9Ri8Lw1Bc0yv-XI0JnyH8I';
+var YouTubeAPIkey = 'AIzaSyDVwLTLM1W7oiT-8atVv7XdbGCq0xbnzaM';
 searchCriteria = searchCriteria.concat('copyright%20free%20music');
 console.log(searchCriteria);
 var searchType = 'video';
