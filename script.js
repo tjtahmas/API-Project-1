@@ -72,7 +72,7 @@ fetch('https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=
         return response.json();
     })
     .then(function (data) {
-        //console.log(data);
+        console.log(data);
         videoID = data.items[0].id.videoId;
         console.log(videoID);
         //make embeded YouTube link from videoID
