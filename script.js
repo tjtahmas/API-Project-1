@@ -62,7 +62,7 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=' + 
         // weatherIcon.src = 'https://openweathermap.org/img/w/' + icon + '.png';
 
 //Initialize YouTube API search queries
-var YouTubeAPIkey = 'AIzaSyDVwLTLM1W7oiT-8atVv7XdbGCq0xbnzaM';
+var YouTubeAPIkey = 'AIzaSyAmz5aARCdvb9Ri8Lw1Bc0yv-XI0JnyH8I';
 searchCriteria = searchCriteria.concat('copyright%20free%20music'); //Make sure music is copyright free
 var searchType = 'video';
 var maxResults = 15;
