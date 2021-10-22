@@ -57,7 +57,7 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=' + 
             searchCriteria = 'clear%20day%20';
             document.body.style.backgroundImage = "url(./images/clear_skys.png)";
         } else if (status == 'Thunderstorm'){
-            document.body.style.backgroundColor = "purple"
+            document.body.style.backgroundImage = "url(./images/thunderstorms-bg.png)"
             searchCriteria = 'thunderstorm%20';
         } else if (status == 'Drizzle'){
             document.body.style.backgroundImage = "url(./images/rain-background.gif)";
@@ -74,7 +74,7 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=' + 
         } else {
             document.body.style.backgroundImage = "url(./images/alert.png)";
             console.log('Play PANIC!! Playlist') //Could include Fog, Mist, Smoke, Ash, Squall, Sand, Tornado, etc.
-            searchCriteria = 'sandstorm%20';
+            searchCriteria = 'darude-sandstorm%20';
         }
 
         //Changes weather icon to match current weather
