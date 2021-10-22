@@ -29,7 +29,7 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=' + 
             document.getElementById('cityName').innerHTML = city + ' ' + '<img src=https://openweathermap.org/img/w/' + icon + '.png />'
         
         if (status == 'Clouds'){
-            document.body.style.backgroundImage = "url(./images/clouds.png.png)";
+            document.body.style.backgroundImage = "url(./images/clouds.png)";
             console.log('Play Clouds Playlist');
             searchCriteria = 'cloudy%20day%20';
         } else if (status == 'Clear'){
