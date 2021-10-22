@@ -23,31 +23,10 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=' + 
         var weather = data;
         var status = weather.weather[0].main;
 
-        //Add Weather Icon
-        //var container = document.getElementById('main-card');
-        //console.log(container.children[1].outerHTML)
-        //var checkIMG = container.children[1].outerHTML;
-        //checkIMG = checkIMG.slice(0,4);
-        //if (checkIMG == '<img'){
-            //container.children[1].remove();
             var iconIMG = document.createElement('img');
             var icon = weather.weather[0].icon;
             iconIMG.src = 'https://openweathermap.org/img/w/' + icon + '.png';
-            //container.appendChild(iconIMG);
-            //container.insertBefore(iconIMG, container.childNodes[2]);
             document.getElementById('cityName').innerHTML = city + ' ' + '<img src=https://openweathermap.org/img/w/' + icon + '.png />'
-        // } else {
-        //     var iconIMG = document.createElement('img');
-        //     var icon = weather.weather[0].icon;
-        //     iconIMG.src = 'https://openweathermap.org/img/w/' + icon + '.png';
-            //container.appendChild(iconIMG);
-            //container.insertBefore(iconIMG, container.childNodes[2]);
-        //}
-        
-        // document.getElementById("weather").innerHTML = data.name + " " + dateConverter + " " + "<img src = " + url + " >"
-        // document.getElementById("temperature").innerHTML = "Temp: " + data.main.temp + "°F"
-        // document.getElementById("wind").innerHTML = "Wind: " + data.wind.speed + "MPH"
-        // document.getElementById("humidity").innerHTML = "Humidity: " + data.main.humidity + "%"
         
         if (status == 'Clouds'){
             document.body.style.backgroundImage = "url(./images/clouds.png.png)";
